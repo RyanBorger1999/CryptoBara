@@ -1,0 +1,18 @@
+.App{
+    background-color: #03A89E;
+    opacity: 85%;
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+.CryptoLogo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 10px;
+}
+img{
+    max-width:100%;
+    height:auto;
+}

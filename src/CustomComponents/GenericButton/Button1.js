@@ -1,20 +1,34 @@
-import React from 'react';
+import { noChange } from 'lit-html';
+import React, {useState} from 'react';
 
 class Button1 extends React.Component {
+
   render() {
+    
     const buttonStyle = {
       backgroundColor: "#FF9912",
       color: "black",
       boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)",
       border: "none",
-      borderRadius: "8px",
+      borderRadius: "80px",
       padding: "12px 35px",
-      transitionDuration: "0.4s"
+      outline: "none",
+      width : this.props.width,
+      height : this.props.height
     };
-    // TODO: Add some sort of hover effect please
-
+    
+    function changeBackground(e) {
+      e.target.style.background = 'white';
+    }
+    function originalBackground(e) {
+      e.target.style.background = '#FF9912';
+    }
+    
     return (
-      <button style={buttonStyle} type="submit" form="emailForm" value="Submit">{this.props.description}</button>
+    <button onMouseOver={changeBackground} onMouseLeave={originalBackground} style={buttonStyle} type="button" form="emailForm" value="Submit">
+            {this.props.description}
+          </button>
+      
     );
   }
 
