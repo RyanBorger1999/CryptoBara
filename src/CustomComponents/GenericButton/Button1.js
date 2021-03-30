@@ -4,7 +4,6 @@ import React, {useState} from 'react';
 class Button1 extends React.Component {
 
   render() {
-    
     const buttonStyle = {
       backgroundColor: "#FF9912",
       color: "black",
@@ -20,6 +19,7 @@ class Button1 extends React.Component {
     function changeBackground(e) {
       e.target.style.background = 'white';
     }
+    
     function originalBackground(e) {
       e.target.style.background = '#FF9912';
     }

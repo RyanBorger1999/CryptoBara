@@ -1,7 +1,7 @@
 import React from 'react';
-import BaraHome from './BaraHome';
-import BaraContact from './BaraContact';
-import BaraAbout from './BaraAbout';
+import BaraHome from './Pages/BaraHome';
+import BaraContact from './Pages/BaraContact';
+import BaraAbout from './Pages/BaraAbout';
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,7 +13,6 @@ function BaraRouter() {
   return (
     <Router>
       <div className="BaraRouter">
-       
         <Switch>
           <Route path="/BaraHome">
             <BaraHome />
