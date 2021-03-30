@@ -1,25 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 import BaraRouter from './CustomComponents/BaraRouter.js'
+import NavBar from './CustomComponents/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <BaraRouter/>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          CryptoBrandon
-        </a>
-      </header>
+    <div>
+      <NavBar/>
+      <div  className="App">
+        <div className="CryptoLogo"><img src="https://i.ibb.co/TTF9NZ8/Crypto-Bara-Logo.png" alt="Crypto-Bara-Logo" border="0"></img></div>
+      </div>
     </div>
   );
 }
