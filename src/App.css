@@ -1,18 +1,44 @@
-.App{
-    background-color: #03A89E;
+.backgroundPage{
+    background-color: #0faaa0;
     opacity: 85%;
     scroll-behavior: smooth;
     height: 100vh;
+    padding-top: 70px;
 }
 
-.CryptoLogo{
+.container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
+    padding-top: 20px;
     padding: 10px;
 }
-img{
-    max-width:100%;
+
+.CryptoBaraImg{
+    float: left;
+    width: 300px;
     height:auto;
+}
+
+footer{
+    display: grid;
+    justify-content: center;
+    padding: 5px;
+    background-color: #03A89E;
+    font-size: 10px;
+    color: #fff;
+}
+
+.signupFooter{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Microsoft Sans Serif';
+    padding: 10px;
+    font-size: 20px;
+}
+
+.footer-copyright{
+    background-color: #1b817a;
+    width: 100%;
 }

@@ -1,31 +1,30 @@
 import React from 'react';
 import BaraHome from './Pages/BaraHome';
-import BaraContact from './Pages/BaraContact';
-import BaraAbout from './Pages/BaraAbout';
+import BaraNews from './Pages/BaraNews';
+import BaraSupport from './Pages/BaraSupport';
+import BaraFooter from './BaraFooter'
+import NavBar from './NavBar';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 function BaraRouter() {
   return (
-    <Router>
-      <div className="BaraRouter">
+    <div>
+      <Router>
+        <NavBar/>
         <Switch>
-          <Route path="/BaraHome">
-            <BaraHome />
-          </Route>
-          <Route path="/BaraAbout">
-            <BaraAbout />
-          </Route>
-          <Route path="/BaraContact">
-            <BaraContact />
-          </Route>
+          <Route exact path="/" component={BaraHome} />
+          <Route exact path="/BaraHome" component={BaraHome} />
+          <Route exact path="/BaraNews" component={BaraNews} />
+          <Route exact path="/BaraSupport" component={BaraSupport} />
         </Switch>
-      </div>
-    </Router>
+      </Router>
+      <BaraFooter>
+      </BaraFooter>
+    </div>
   );
 }
 
