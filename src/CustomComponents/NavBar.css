@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Microsoft Sans Serif';
 }
 
 nav{
@@ -10,7 +10,7 @@ nav{
   padding: 10px 40px;
 }
 
-nav ul {
+nav ul{
   list-style: none;
   display: flex;
   align-items: center;
@@ -37,10 +37,18 @@ nav ul li.items:hover:after{
 nav ul li.logo{
   flex: 1;
   color: white;
-  font-size: 23px;
+  font-size: 30px;
   font-weight: 600;
+  padding-left: 10px;
+  font-family: 'Microsoft Sans Serif';
   cursor: default;
   user-select: none;
+}
+
+.baraNav{
+  float: left;
+  width: 50px;
+  height:auto;
 }
 
 nav ul li a{
@@ -81,10 +89,6 @@ nav ul li.btn.hide i:before{
     display: block;
   }
 
-  nav ul li.btn{
-    display: block;
-  }
-
   nav ul li.items:hover{
     border-radius: 5px;
     box-shadow: inset 0 0 5px #33ffff,
@@ -94,6 +98,77 @@ nav ul li.btn.hide i:before{
   nav ul li.items:hover:after{
     opacity: 0;
   }
-
 }
 
+@media all and (min-width: 900px){
+  .bm-menu{
+    display: none;
+  }
+  .bm-item{
+    display: none;
+  }
+  .bm-burger-button {
+    display: none;
+  }
+
+  .bm-cross-button {
+    display: none;
+  }
+  .bm-overlay {
+    display: none;
+  }
+}
+
+/* Individual item for burger memu */
+.bm-item{
+  display: inline-block;
+  outline: none;
+  align-items: flex-end;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+/* Change color on hover */
+.bm-item:hover{
+  color: white;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button{
+  position: relative;
+  float: right;
+  width: 20px;
+  height: 20px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars{
+  background: white;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button{
+  height: 10px;
+  width: 10px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross{
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu{
+  background: white;
+  padding: 2.3rem 0 0;
+  font-size: 1.15em;
+  width: 150px;
+  float: right;
+}
+
+/* Styling of overlay */
+.bm-overlay{
+  background: rgba(0, 0, 0, 0.3);
+}
