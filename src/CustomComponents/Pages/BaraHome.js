@@ -23,7 +23,6 @@ class BaraHome extends React.Component{
               eraseDelay={700}
               staticText={[ "CryptoBara : "]}/>
         </div>
-        
         <div className="container">
           <div class="row align-items-center">
             <img class="modulePicture" src="https://i.ibb.co/XW29C39/Adult-capybara.jpg"></img>
