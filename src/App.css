@@ -6,15 +6,6 @@
     padding-top: 70px;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-    padding-top: 20px;
-    padding: 10px;
-}
-
 .CryptoBaraImg{
     float: left;
     width: 300px;
@@ -41,4 +32,16 @@ footer{
 .footer-copyright{
     background-color: #1b817a;
     width: 100%;
+}
+
+input[type=submit] {
+  background-color: #FF9912;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 5px 30px;
+  border-radius: 80px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
 }
