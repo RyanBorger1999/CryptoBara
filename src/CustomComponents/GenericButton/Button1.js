@@ -18,13 +18,13 @@ class Button1 extends React.Component {
     function changeBackground(e) {
       e.target.style.background = 'white';
     }
-
+    
     function originalBackground(e) {
       e.target.style.background = '#FF9912';
     }
     
     return (
-      <button onMouseOver={changeBackground} onMouseLeave={originalBackground} style={buttonStyle} type="button" form="emailForm" value="Submit">
+      <button onMouseOver={changeBackground} onMouseLeave={originalBackground} style={buttonStyle} type="button" onclick={this.props.locate} form="emailForm" value="Submit">
         {this.props.description}
       </button>
     );
