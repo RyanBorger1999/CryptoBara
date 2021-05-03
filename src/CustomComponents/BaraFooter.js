@@ -4,7 +4,6 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
 class BaraFooter extends React.Component {
   render() {
- 
     {
         const mystyle = {
         color: "black",
@@ -14,7 +13,6 @@ class BaraFooter extends React.Component {
         fontSize: "15px",
         textDecoration: "underline"
     }
-  
    
     return (
       <MDBFooter className="font-small pt-4 mt-4">
