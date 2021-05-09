@@ -1,3 +1,5 @@
+@import "./GlobalStyleSheet.css";
+
 .backgroundPage{
     background-color: #0faaa0;
     opacity: 85%;
@@ -13,12 +15,12 @@
 }
 
 footer{
-    display: grid;
+    display: flex;
     justify-content: center;
-    padding: 5px;
-    background-color: #03A89E;
+    background-color: var(--darkBlue-color);
     font-size: 10px;
-    color: #fff;
+    color: var(--white-color);
+    bottom: 0;
 }
 
 .signupFooter{
@@ -30,12 +32,12 @@ footer{
 }
 
 .footer-copyright{
-    background-color: #1b817a;
+    background-color: #2e2e2e;
     width: 100%;
 }
 
 input[type=submit] {
-  background-color: #FF9912;
+  background-color: var(--orange-color);
   outline: none;
   border: none;
   color: #fff;
