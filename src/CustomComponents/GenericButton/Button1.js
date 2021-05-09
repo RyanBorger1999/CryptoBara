@@ -2,8 +2,9 @@ import React from 'react';
 
 class Button1 extends React.Component {
   render() {
+    let color = "#FF9912";
     const buttonStyle = {
-      backgroundColor: this.props.color,
+      backgroundColor: color,
       color: "black",
       boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)",
       border: "none",
@@ -20,7 +21,7 @@ class Button1 extends React.Component {
     }
     
     function originalBackground(e) {
-      e.target.style.background = '#FF9912';
+      e.target.style.background = color;
     }
     
     return (

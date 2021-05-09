@@ -48,7 +48,7 @@ class SupportForm extends React.Component {
             <Col sm={6}>
               <Container>
                   <Row><Col><h4>Name</h4></Col></Row>
-                  <Row><Col><BaraInput type="text" name="name" placeHolder="John Doe"></BaraInput></Col></Row>
+                  <Row><Col><BaraInput type="text" name="name" placeHolder="John DIDIDDI"></BaraInput></Col></Row>
                   <Row><Col><h4>Email</h4></Col></Row>
                   <Row><Col><BaraInput type="email" name="email" placeHolder="JohnDoe@example.com"></BaraInput></Col></Row>
                   <Row><Col><h4>Subject</h4></Col></Row>

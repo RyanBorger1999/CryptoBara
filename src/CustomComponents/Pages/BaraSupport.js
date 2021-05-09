@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import SupportForm from "../SupportForm";
-import { Row, Container, Col } from 'reactstrap';
-import BaraFooter from '../BaraFooter';
+import SupportForm from "../SupportForm/SupportForm";
+import { Container } from 'reactstrap';
 
 class BaraSupport extends Component {
 
     render(){
         return(
-            <div className="backgroundPage">
+            <div className="backgroundPage" style={{paddingBottom: "1200px"}}>
                 <Container>
                     <div>
                         <Container>
@@ -17,7 +16,7 @@ class BaraSupport extends Component {
                             <p style={{color: "white", textAlign: "center"}}>Email us with questions or concerns</p>
                         </Container>
                         <SupportForm></SupportForm>
-                    </div>
+                    </div >
                 </Container>
             </div>
         );

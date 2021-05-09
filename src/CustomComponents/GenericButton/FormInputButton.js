@@ -8,12 +8,12 @@ class FormInputButton extends React.Component {
       color: "black",
       boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)",
       border: "none",
-      borderRadius: "80px",
+      borderRadius: this.props.borderRadius,
       fontSize: "11px",
       outline: "none",
       marginLeft: this.props.marginLeft,
       maxWidth: this.props.maxWidth,
-      width: "auto",
+      width: this.props.width,
       height: this.props.height
     };
     
