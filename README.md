@@ -24,6 +24,4 @@ To install use npm install --save (example)
 * EmailJs: ---> npm install --save emailjs, npm install --save emailjs-com
 * ReactBurger: ---> npm install --save react-burger-menu
 * ReactTypingEffect: ---> npm install --save react-typing-effect           
-=======
-To setup the app navigate to the scripts directory.
-Run the ./setup script
+
