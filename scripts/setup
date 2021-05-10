@@ -42,6 +42,8 @@ set -x
 npm install react-burger-menu --save
 npm install react-typing-effect --save
 npm install emailjs-com --save
+npm install bootstrap --save
+npm install --save reactstrap react react-dom
 set +x
 sleep 4
 echo -e ${YELLOW}Successfully installed dependencies

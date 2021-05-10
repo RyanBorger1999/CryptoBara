@@ -29,7 +29,8 @@ class SupportForm extends React.Component {
       backgroundColor: "#bdc3c7",
       borderRadius: "20px",
       boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)",
-      padding: "10px"
+      padding: "10px",
+      border: "3px solid #646464"
     }
 
   const baraSupport = {
@@ -48,7 +49,7 @@ class SupportForm extends React.Component {
             <Col sm={6}>
               <Container>
                   <Row><Col><h4>Name</h4></Col></Row>
-                  <Row><Col><BaraInput type="text" name="name" placeHolder="John DIDIDDI"></BaraInput></Col></Row>
+                  <Row><Col><BaraInput type="text" name="name" placeHolder="John Doe"></BaraInput></Col></Row>
                   <Row><Col><h4>Email</h4></Col></Row>
                   <Row><Col><BaraInput type="email" name="email" placeHolder="JohnDoe@example.com"></BaraInput></Col></Row>
                   <Row><Col><h4>Subject</h4></Col></Row>
