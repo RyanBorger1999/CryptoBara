@@ -1,0 +1,58 @@
+/*
+* The Global style sheet
+* Wide use case styles should be implemented here
+*
+*/
+
+/*Reference global colors from within css*/
+/*Example Color: var(--orange-color); */
+:root {
+  --orange-color: #FF9912;
+  --darkBlue-color: #03A89E;
+  --lightBlue-color: #0faaa0;
+  --aquaBlue1-color: #33ffff;
+  --aquaBlue2-color: #66ffff;
+  --inputBlue-color: #8cd0f0;
+  --white-color: #fff;
+  --offWhite-color: #d1d1d1;
+  --lightGray-color: #bdc3c7;
+  --black-color: #000;
+}
+
+/*Reference global colors from within Javascript attributes*/
+/*Example   color={globalStyle.orange};      */
+.orangeColor {
+  color: var(--orange-color);
+}
+
+.darkBlueColor {
+  color: var(--darkBlue-color);
+}
+
+.lightBlueColor {
+  color: var(--lightBlue-color);
+}
+
+.aquaBlue1Color {
+  color: var(--aquaBlue1-color);
+}
+
+.aquaBlue2Color {
+  color: var(--aquaBlue2-color);
+}
+
+.whiteColor {
+  color: var(--white-color);
+}
+
+.offWhiteColor {
+  color: var(--offWhite-color);
+}
+
+.lightGrayColor {
+  color: var(--lightGray-color);
+}
+
+.blackColor {
+  color: var(--black-color);
+}

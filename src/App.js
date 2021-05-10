@@ -1,12 +1,14 @@
 import './App.css';
-import BaraRouter from './CustomComponents/BaraRouter';
-import CopyrightFooter from './CustomComponents/CopyrightFooter';
+import BaraRouter from './CustomComponents/BaraRouter/BaraRouter';
+import CopyrightFooter from './CustomComponents/BaraFooter/CopyrightFooter';
 
 
 function App() {
   return (
     <div>
-      <BaraRouter/>
+      <div>
+        <BaraRouter/>
+      </div>
       <CopyrightFooter/>
     </div>
   );

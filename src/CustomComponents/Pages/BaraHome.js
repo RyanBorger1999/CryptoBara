@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactTypingEffect from 'react-typing-effect';
+import './BaraHome.css';
 
 class BaraHome extends React.Component{
   render(){
     return (
-      <div className="backgroundPage">
-        <div className="container">
+      <div className="backgroundPage" style={{paddingBottom: "1000px"}}>
+        <div className="containerHome">
           <img src="https://i.ibb.co/TTF9NZ8/Crypto-Bara-Logo.png" className="CryptoBaraImg" alt="Crypto-Bara-Logo"  border="0"></img>
         </div>
-        <div className="container">
+        <div className="containerHome">
           <ReactTypingEffect
               text={[ "Welcome to CryptoBara...","Learn more...." ]}
               speed={70}
@@ -22,7 +23,11 @@ class BaraHome extends React.Component{
               eraseDelay={700}
               staticText={[ "CryptoBara : "]}/>
         </div>
-        <h1>Hello Home page</h1>
+        <div className="container">
+          <div class="row align-items-center">
+            <img class="modulePicture" src="https://i.ibb.co/XW29C39/Adult-capybara.jpg" alt="baraImage"></img>
+          </div>
+        </div>
       </div>
     );
   }

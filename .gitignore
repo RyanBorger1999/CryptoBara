@@ -14,6 +14,10 @@
 #untracked
 .package.json
 .yarn.lock
+.scripts/setup
+/scripts/setup
+/package.json
+/yarn.lock
 
 # misc
 .DS_Store

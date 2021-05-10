@@ -1,3 +1,5 @@
+@import "../../GlobalStyleSheet.css";
+
 *{
   margin: 0;
   padding: 0;
@@ -6,7 +8,7 @@
 }
 
 nav{
-  background-color: #03A89E;
+  background-color: var(--darkBlue-color);
   padding: 10px 40px;
 }
 
@@ -53,14 +55,14 @@ nav ul li.logo{
 
 nav ul li a{
   color: white;
-  font-size: 18px;
+  font-size: 22px;
   text-decoration: none;
   list-style-type: none;
   transition: .1s;
 }
 
 nav ul li:hover a{
-  color: #FF9912;
+  color: var(--white-color);
 }
 
 nav ul li i{
@@ -91,8 +93,8 @@ nav ul li.btn.hide i:before{
 
   nav ul li.items:hover{
     border-radius: 5px;
-    box-shadow: inset 0 0 5px #33ffff,
-                inset 0 0 10px #66ffff;
+    box-shadow: inset 0 0 5px var(--aquaBlue1-color),
+                inset 0 0 10px var(--aquaBlue2-color);
   }
 
   nav ul li.items:hover:after{
@@ -126,13 +128,13 @@ nav ul li.btn.hide i:before{
   align-items: flex-end;
   text-decoration: none;
   margin-bottom: 10px;
-  color: #d1d1d1;
+  color: var(--offWhite-color);
   transition: color 0.2s;
 }
 
 /* Change color on hover */
 .bm-item:hover{
-  color: white;
+  color: var(--white-color);
 }
 
 /* Position and sizing of burger button */
@@ -145,7 +147,7 @@ nav ul li.btn.hide i:before{
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars{
-  background: white;
+  background: var(--lightGray-color);
 }
 
 /* Position and sizing of clickable cross button */
@@ -156,19 +158,20 @@ nav ul li.btn.hide i:before{
 
 /* Color/shape of close button cross */
 .bm-cross{
-  background: #bdc3c7;
+  background: var(--orange-color);
 }
 
 /* General sidebar styles */
 .bm-menu{
-  background: white;
+  background: var(--lightGray-color);
   padding: 2.3rem 0 0;
   font-size: 1.15em;
   width: 150px;
   float: right;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 /* Styling of overlay */
 .bm-overlay{
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--black-color);
 }
