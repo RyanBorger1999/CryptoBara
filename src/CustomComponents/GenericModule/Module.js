@@ -29,42 +29,37 @@ class Module extends React.Component{
             display: "flex",
             flexDirection: "column",
             flexWrap: "wrap",
-            height: "50vw",
+            height: "25vw",
             listStyleType: "none",
             padding: "10px"
           };
 
-          const boxa={
-            paddingTop:"100px",
-            flex: "0 0 100%",
-            width: "50%"
-            
+          const descriptionBox={
+            fontSize: "20px",
+            position: "center",
+            textAlign: "center",
+            fontFamily: "Verdana"
           };
 
-          const boxb={
-            background: "orange",
+          const titleBox={
+            textAlign: "center",
             flex: "0 0 50%",
             height: "25vw",
-            width: "50%"
+            width: "50%",
+            fontSize: "50px",
+            padding: "80px 0",
+            fontFamily: "Microsoft Sans Serif"
           };
-
-          const boxc={
-            background: "lightgreen",
-            flex: "0 0 50%",
-            height: "25vw",
-            width: "50%"
-          };
-         
 
         return(
             <div style={MainBox}>
-               <div style={boxc}>
+               <div style={titleBox}>
                    {this.props.title}
-               </div>
-               <div style={boxb} >
+                   <div style={descriptionBox}>
                     {this.props.description}
+                   </div>
                </div>
-               <div style={boxa}>
+               <div style={descriptionBox} >
                     <img className="ModImage" src="https://i.ibb.co/XW29C39/Adult-capybara.jpg"></img>
                </div>
                
